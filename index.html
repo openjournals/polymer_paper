@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <title></title>
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+      <script src="components/platform/platform.js"></script>
+
+      <link href="http://xymostech.com/katex/katex.min.css" rel="stylesheet" type="text/css">
+      <link href="http://xymostech.com/katex/fonts/fonts.css" rel="stylesheet" type="text/css">
+      <script src="http://xymostech.com/katex/katex.min.js"></script>
+
+      <link rel='stylesheet' href="styles/fonts.css">
+
+      <link rel="import" href="components/polymer/polymer.html">
+      <link rel="import" href="p-paper/p-paper.html">
+      <link rel="import" href="p-paper/p-author-list.html">
+      <link rel="import" href="p-paper/p-author.html">
+      <link rel="import" href="p-paper/p-abstract.html">
+      <link rel="import" href="p-paper/p-section.html">
+      <link rel="import" href="p-paper/p-ref.html">
+      <link rel="import" href="p-paper/p-figure.html">
+      <link rel="import" href="p-paper/p-math.html">
+      <link rel="import" href="p-paper/p-bib.html">
+
+
+      <style media="screen">
+          html,body{
+            width  : 100%;
+            height : 100%;
+          }
+      </style>
+  </head>
+  <body>
+
+    <p-paper>
+      <h1 id='title'>Planet Hunters. VI. An Independent Characterization of KOI-351 and Several Long Period Planet Candidates from the Kepler Archival Data</h1>
+
+      <p-abstract>
+        We report the discovery of 14 new transiting planet candidates in the Kepler field from the Planet Hunters citizen science program.
+        None of these candidates overlapped with Kepler Objects of Interest (KOIs) at the time of submission. We report the discovery of one
+        more addition to the six planet candidate system around KOI-351, making it the only seven planet candidate system from Kepler.
+        Additionally, KOI-351 bears some resemblance to our own solar system, with the inner five planets ranging from Earth to mini-Neptune
+        radii and the outer planets being gas giants; however, this system is very compact, with all seven planet candidates orbiting <~ 1 AU
+        from their host star. A Hill stability test and an orbital integration of the system shows that the system is stable. Furthermore, we
+        significantly add to the population of long period transiting planets; periods range from 124 to 904 days, eight of them more than one
+        Earth year long. Seven of these 14 candidates reside in their host star's habitable zone.
+      </p-abstract>
+
+      <p-author-list>
+        <p-author affiliation='Department of Astronomy, Yale University, New Haven, CT 06511 USA'>Schmitt, Joseph R.</p-author>
+        <p-author affiliation='Department of Astronomy, Yale University, New Haven, CT 06511 USA' >Wang, Ji</p-author>
+        <p-author affiliation='Department of Astronomy, Yale University, New Haven, CT 06511 USA' >Fischer, Debra A.</p-author>
+        <p-author affiliation='Planet Hunter'> Jek, Kian J.</p-author>
+        <p-author affiliation='Department of Astronomy, Yale University, New Haven, CT 06511 USA' >Moriarty, John C.</p-author>
+        <p-author affiliation='Department of Astronomy, Yale University, New Haven, CT 06511 USA' >Boyajian, Tabetha S.</p-author>
+        <p-author affiliation='Institute of Astronomy and Astrophysics, Academia Sinica, 11F of Astronomy-Mathematics Building, National Taiwan University. No.1, Sec. 4, Roosevelt Rd, Taipei 10617, Taiwan' >Schwamb, Megan E.</p-author>
+        <p-author affiliation='Oxford Astrophysics, Denys Wilkinson Building, Keble Road, Oxford OX1 3RH' >Lintott, Chris</p-author>
+        <p-author affiliation='Adler Planetarium, 1300 S. Lake Shore Drive, Chicago, IL 60605, USA' >Lynn, Stuart</p-author>
+        <p-author affiliation='Adler Planetarium, 1300 S. Lake Shore Drive, Chicago, IL 60605, USA' >Smith, Arfon M.</p-author>
+        <p-author affiliation='Adler Planetarium, 1300 S. Lake Shore Drive, Chicago, IL 60605, USA' >Parrish, Michael</p-author>
+        <p-author affiliation='Institute for Astronomy, Department of Physics, ETH Zurich, Wolfgang-Pauli-Strasse 16, CH-8093 Zurich, Switzerland' > Schawinski, Kevin</p-author>
+        <p-author affiliation='Oxford Astrophysics, Denys Wilkinson Building, Keble Road, Oxford OX1 3RH' >Simpson, Robert</p-author>
+        <p-author affiliation='Planet Hunter'>LaCourse, Daryll</p-author>
+        <p-author affiliation='Planet Hunter'>Omohundro, Mark R.</p-author>
+        <p-author affiliation='Planet Hunter'>Winarski, Troy</p-author>
+        <p-author affiliation='Planet Hunter'>Goodman, Samuel Jon</p-author>
+        <p-author affiliation='Planet Hunter'>Jebson, Tony</p-author>
+        <p-author affiliation='Planet Hunter'>Schwengeler, Hans Martin</p-author>
+        <p-author affiliation='Planet Hunter'>Paterson, David A.</p-author>
+        <p-author affiliation='Planet Hunter'>Sejpka, Johann</p-author>
+        <p-author affiliation='Planet Hunter'>Terentev, Ivan</p-author>
+        <p-author affiliation='Planet Hunter'>Jacobs, Tom</p-author>
+        <p-author affiliation='Planet Hunter'>Alsaadi, Nawar</p-author>
+        <p-author affiliation='Planet Hunter'>Bailey, Robert C.</p-author>
+        <p-author affiliation='Planet Hunter'>Ginman, Tony</p-author>
+        <p-author affiliation='Planet Hunter'>Granado, Pete</p-author>
+        <p-author affiliation='Planet Hunter'>Vonstad Guttormsen, Kristoffer</p-author>
+        <p-author affiliation='Planet Hunter'>Mallia, Franco</p-author>
+        <p-author affiliation='Planet Hunter'>Papillon, Alfred L.</p-author>
+        <p-author affiliation='Planet Hunter'>Rossi, Franco</p-author>
+        <p-author affiliation='Planet Hunter'>Socolovsky, Miguel</p-author>
+      </p-author-list>
+
+      <p-section title='Introduction' context="background">
+        <p>
+          <p-math> x^2  </p-math>
+
+          Over the last 20 years, hundreds of exoplanets have been discovered. One powerful method to
+          discover planet candidates is the photometric transit technique, in which a planet crosses in front
+          of its host star as seen from Earth. The Kepler mission has been observing
+          ∼160,000 stars nearly continuously for almost four years searching for these transit signals. In the
+          first 16 quarters, spanning four years, more than 3,800 planet candidates have been discovered (and
+          about 800 more have yet to be dispositioned) via this photometric transit technique1
+          (Borucki et al.
+          2011; Batalha et al. 2013; Burke et al. 2014). The Kepler team searches for transit signals using
+          a matched filter search algorithm that employs wavelets for numerical efficiency, the transit planet
+          search (TPS) <p-ref full="Jenkins et al. 2002, 2010">Jenkins et al. 2002, 2010</p-ref>, which requires three transits with a significance of 7.1σ
+          to be placed on the Threshold Crossing Event (TCE) list (Tenenbaum et al. 2013, 2014). TPS’s
+          Q1-16 run has discovered more than 16,000 transit signals (Tenenbaum et al. 2014). Those TCEs
+          which pass additional tests, including a human review stage (Batalha et al. 2013), become Kepler
+          Objects of Interest (KOIs). It is expected that most KOI candidates are true planets (Morton &
+          Johnson 2011). The false positive rate has been found to depend on the planet radius, with the
+          lowest false positive rate (6.7 − 8.8%) in the range of 1.25 − 6.00R⊕, where we find a majority
+          of the new Planet Hunters candidates. Larger planets suffer a false positive rate of 15.9 − 17.7%
+          (Fressin et al. 2013). However, the false positive rate for multiple planet candidates is very low,
+          approximately only two out of all Kepler targets (Lissauer et al. 2012, 2014).
+        </p>
+
+        <p-figure title='My new result'>
+
+          <div id='content'>
+            <img src="http://www.planethunters.org/images/multitransits.png"></img>
+          </div>
+
+          <span id='caption'>This is a caption for an image, isnt it awesome</span>
+
+        </p-figure>
+
+        <p>
+          The Planet Hunters project2 (Fischer et al. 2012) is one of the Zooniverse projects
+          (Lintott et al. 2008, 2011; Fortson et al. 2012) and is designed to have humans visually check Kepler light
+          curves, broken into 30 day increments, to search for undiscovered transit signals. Since December,
+          2010, approximately 280,000 public volunteers have searched through more than 21 million Kepler
+          light curves hunting for transiting planets, contributing a cumulative total of 200 years of work.
+        </p>
+
+      </p-section>
+
+      <p-section title='Planet Hunters Candidate Discoveries' context="method">
+        Eu sint velit reprehenderit adipisicing aute officia et. Officia ex reprehenderit aliqua dolor quis proident velit nisi dolor eiusmod. Excepteur do fugiat anim laboris veniam voluptate reprehenderit laboris officia excepteur ut ex. Enim commodo amet laborum eiusmod commodo cupidatat sunt ad commodo nulla est consectetur.
+        Aliquip dolor proident aliquip laborum do aliquip tempor laborum commodo laborum consectetur sint nostrud magna. Aliqua sunt dolore nostrud dolor sunt consequat cillum. Anim sint culpa labore culpa excepteur minim consequat excepteur aute consequat ipsum nostrud. Minim qui velit cillum nostrud anim excepteur laborum in sit dolore. Eu officia minim elit tempor consequat exercitation sunt. Enim in culpa excepteur magna adipisicing dolor ipsum irure tempor officia nostrud est cillum. Irure commodo sint nulla est mollit non. Magna ad adipisicing anim ipsum est ex Lorem duis aliqua ipsum veniam sint est et. Pariatur fugiat nostrud ipsum reprehenderit Lorem ullamco sunt incididunt do dolor et proident cillum. Duis deserunt enim officia anim labore elit aliquip esse.
+        Voluptate velit sint non in enim amet reprehenderit pariatur laborum aliquip in ipsum veniam veniam. Magna ad anim ipsum adipisicing duis ex duis Lorem magna aliquip eu in commodo. Cupidatat nulla reprehenderit sint nostrud minim est irure minim. Dolore commodo cupidatat adipisicing non pariatur dolor voluptate enim consequat. Labore id adipisicing tempor tempor ullamco anim veniam cupidatat consequat adipisicing esse ipsum anim. Consequat dolore qui ullamco aliquip sint. Nostrud tempor commodo veniam excepteur aliquip deserunt do sunt et sunt. Dolor Lorem laboris aliquip consequat esse nulla.
+        Magna laborum magna excepteur cupidatat laboris tempor magna laborum et proident ut excepteur aute laborum. Deserunt veniam qui consequat tempor sunt ex sunt minim culpa et non. Deserunt esse sint sunt dolor tempor consequat cillum. Non qui proident non dolore exercitation elit irure proident pariatur fugiat proident. La
+      </p-section>
+
+      <p-section title='What we found' context="results">
+        Eu sint velit reprehenderit adipisicing aute officia et. Officia ex reprehenderit aliqua dolor quis proident velit nisi dolor eiusmod. Excepteur do fugiat anim laboris veniam voluptate reprehenderit laboris officia excepteur ut ex. Enim commodo amet laborum eiusmod commodo cupidatat sunt ad commodo nulla est consectetur.
+        Aliquip dolor proident aliquip laborum do aliquip tempor laborum commodo laborum consectetur sint nostrud magna. Aliqua sunt dolore nostrud dolor sunt consequat cillum. Anim sint culpa labore culpa excepteur minim consequat excepteur aute consequat ipsum nostrud. Minim qui velit cillum nostrud anim excepteur laborum in sit dolore. Eu officia minim elit tempor consequat exercitation sunt. Enim in culpa excepteur magna adipisicing dolor ipsum irure tempor officia nostrud est cillum. Irure commodo sint nulla est mollit non. Magna ad adipisicing anim ipsum est ex Lorem duis aliqua ipsum veniam sint est et. Pariatur fugiat nostrud ipsum reprehenderit Lorem ullamco sunt incididunt do dolor et proident cillum. Duis deserunt enim officia anim labore elit aliquip esse.
+        Voluptate velit sint non in enim amet reprehenderit pariatur laborum aliquip in ipsum veniam veniam. Magna ad anim ipsum adipisicing duis ex duis Lorem magna aliquip eu in commodo. Cupidatat nulla reprehenderit sint nostrud minim est irure minim. Dolore commodo cupidatat adipisicing non pariatur dolor voluptate enim consequat. Labore id adipisicing tempor tempor ullamco anim veniam cupidatat consequat adipisicing esse ipsum anim. Consequat dolore qui ullamco aliquip sint. Nostrud tempor commodo veniam excepteur aliquip deserunt do sunt et sunt. Dolor Lorem laboris aliquip consequat esse nulla.
+        Magna laborum magna excepteur cupidatat laboris tempor magna laborum et proident ut excepteur aute laborum. Deserunt veniam qui consequat tempor sunt ex sunt minim culpa et non. Deserunt esse sint sunt dolor tempor consequat cillum. Non qui proident non dolore exercitation elit irure proident pariatur fugiat proident. Laborum veniam consequat proident voluptate officia velit est commodo ea est. Consequat aliquip eu commodo excepteur laboris do sunt eiusmod aliquip sit pariatur officia cillum quis. Ad dolor excepteur amet excepteur laborum anim exercitation.
+      </p-section>
+
+      <p-section title='Analysis' context="analysis">
+        Culpa non officia in incididunt labore eu non ex voluptate eiusmod quis. Velit nulla mollit dolore aliquip ex nulla adipisicing voluptate fugiat est occaecat veniam reprehenderit veniam. Et sunt nulla magna ullamco consectetur ea fugiat eiusmod amet. Incididunt irure aute excepteur cupidatat ad cupidatat. Voluptate quis magna nulla ea deserunt aliquip. Tempor non culpa aute nulla id ex adipisicing in exercitation deserunt qui. Et aliquip deserunt ipsum do duis anim id Lorem duis exercitation irure excepteur eiusmod ad. Laborum officia incididunt aute reprehenderit do cillum occaecat nulla id consequat.
+        Aliquip deserunt mollit adipisicing quis commodo et veniam dolore sit. Est excepteur id irure ipsum cillum velit consequat. Eiusmod pariatur adipisicing reprehenderit veniam ipsum aliqua voluptate laboris consectetur cupidatat dolor dolor eiusmod velit. Reprehenderit eu pariatur amet mollit Lorem. Sunt non magna labore reprehenderit veniam sint exercitation pariatur reprehenderit dolore in in commodo do. Tempor proident cupidatat anim do labore. Dolore ex incididunt ut et pariatur id magna anim aliqua dolore irure. Dolore nostrud commodo minim elit ex aliquip nulla laboris exercitation non velit aute ea. Ullamco qui velit duis ut laborum anim do tempor enim officia qui voluptate ipsum laboris.
+        Ex aliqua mollit irure cillum pariatur consectetur elit id. Consequat ullamco voluptate ipsum enim consectetur eu non qui eu labore esse cillum. Officia consequat amet excepteur sunt mollit nulla laboris pariatur veniam officia pariatur ipsum magna commodo. Ea laboris sunt nulla pariatur minim. Exercitation quis est dolor magna minim minim do do non nostrud id officia amet ea.
+        Occaecat veniam ut voluptate non proident labore. Est exercitation voluptate reprehenderit adipisicing adipisicing exercitation. Dolor pariatur exercitation ipsum proident labore et cupidatat aliqua. Laboris dolore Lorem do anim culpa aute velit pariatur aliqua Lorem dolor. Anim amet nulla dolor id do fugiat. Nulla non deserunt dolor aliquip adipisicing ad proident consequat fugiat excepteur culpa. Sint cupidatat deserunt reprehenderit ipsum laboris consequat aliqua nisi nulla cupidatat ex commodo.
+      </p-section>
+
+      <p-section title='Conclusion' context="concolusion">
+        Ipsum ut pariatur adipisicing mollit eiusmod et aliquip eiusmod laboris duis. Velit qui aute aliquip sint aliqua laborum consequat aliquip aute. Nisi aliquip labore laborum amet incididunt sint. Ipsum non ea ullamco Lorem irure exercitation. Commodo ut velit tempor commodo sint. Mollit duis sit mollit aliqua enim pariatur ipsum tempor aliqua non aute occaecat. Ullamco ipsum ullamco culpa irure aliquip tempor cillum laborum labore sunt labore quis amet sint.
+        Cupidatat id ad elit reprehenderit labore nostrud et nulla cillum. Cillum exercitation Lorem et in amet proident deserunt aliqua deserunt enim amet. Excepteur enim mollit culpa pariatur elit elit est proident mollit qui occaecat est ea. Exercitation irure anim eu culpa nisi sit reprehenderit. Sunt enim qui sint laboris consequat enim do tempor. Incididunt occaecat occaecat velit elit non consequat Lorem enim dolor duis cillum mollit. Aliquip consequat occaecat irure in reprehenderit ut et qui magna commodo cillum. Eiusmod labore id veniam proident deserunt quis eiusmod. Aliqua duis et consequat non pariatur occaecat mollit laboris quis non. Ut proident quis fugiat Lorem reprehenderit ad laborum.
+        Proident voluptate veniam nostrud aliquip anim enim dolore. Occaecat exercitation incididunt duis deserunt dolore mollit est irure amet duis ex ex ut. Eu in aute quis in aute ut ullamco consectetur laboris ex elit duis. Excepteur reprehenderit amet qui pariatur Lorem ad tempor incididunt ullamco in eiusmod. Consectetur nostrud proident dolor adipisicing occaecat do Lorem culpa sint. Tempor sunt non sunt est excepteur id cillum voluptate velit laboris.
+        Sunt excepteur cupidatat occaecat dolore esse sit tempor cupidatat. Mollit non occaecat Lorem cupidatat sint. Sunt occaecat officia commodo enim velit mollit ad magna fugiat tempor esse. Ex officia adipisicing ipsum eiusmod proident sunt. Veniam adipisicing non quis anim ea dolor ea velit esse. Reprehenderit adipisicing mollit sint ea cillum amet anim culpa sunt quis amet. Sint fugiat eu proident est dolore sint id sint sunt enim. Esse ea dolore ea nulla labore.
+        Dolor officia elit sunt id voluptate ea magna dolore reprehenderit anim aute. Sit magna enim excepteur ad exercitation aliquip. Sunt ipsum aliquip amet in velit culpa id. Deserunt nisi excepteur qui laborum cupidatat in eiusmod. Reprehenderit voluptate ut est consequat proident amet magna ullamco eiusmod adipisicing ut ullamco. Qui reprehenderit eiusmod nulla dolore nisi duis Lorem ullamco aute pariatur adipisicing duis aliqua.
+      </p-section>
+
+      <p-bib>
+        <p-ref link="http://arxiv.com" rid="Jenkins et al. 2002, 2010"> How to destroy the world: Jenkins et al. 2002, 2010 </p-ref>
+      </p-bib>
+
+    </p-paper>
+
+
+
+  </body>
+</html>
